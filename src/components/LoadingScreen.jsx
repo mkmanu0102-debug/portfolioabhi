@@ -7,13 +7,12 @@ const LoadingScreen = ({ isLoading, onFinish }) => {
   const consoleMessages = [
     'npm run dev',
     'VITE v5.4.1  ready in 234 ms',
-    '➜  Local:   http://localhost:5173/',
+    
     'Initializing Abhimanyu kumar\'s portfolio system...',
     'Loading React functional components...',
     'Fetching Java / Spring Boot modules...',
     'Compiling styling system & glassmorphic utilities...',
-    'Loading project showcases: Event Board & Attendance System...',
-    'Connecting to MySQL local instances...',
+    'Loading project showcases: free Notes & Personal Portfolio...',
     'Executing system check: 100% OK',
     'Launching application...'
   ];

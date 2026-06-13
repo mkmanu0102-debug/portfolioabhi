@@ -23,93 +23,52 @@ const GithubIcon = ({ size = 20 }) => (
 const Projects = () => {
   const projects = [
     {
-      title: 'Attendance Management System',
-      description: 'A full-stack desktop/web portal helping teachers log class attendance, generate dynamic Excel reports, and audit monthly summaries. Designed with secure admin levels.',
-      tech: ['Java', 'Spring Boot', 'MySQL', 'JDBC', 'HTML/CSS'],
+      title: 'Free Notes Website',
+      description: 'A clean, responsive platform built using HTML, CSS, and JavaScript. It helps college students find, view, and download semester notes, lecture guides, and study materials easily.',
+      tech: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com',
       demo: 'https://example.com',
       visual: (
         <svg viewBox="0 0 400 220" className="project-svg">
           <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#4f46e5" />
-              <stop offset="100%" stopColor="#06b6d4" />
+              <stop offset="0%" stopColor="#f59e0b" />
+              <stop offset="100%" stopColor="#ea580c" />
             </linearGradient>
           </defs>
           {/* Card background */}
           <rect width="400" height="220" rx="12" fill="url(#grad1)" opacity="0.15" />
           <rect x="1" y="1" width="398" height="218" rx="11" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="2" />
           
-          {/* Calendar Mockup */}
-          <rect x="30" y="30" width="100" height="150" rx="8" fill="#111827" stroke="rgba(255,255,255,0.1)" />
-          <rect x="30" y="30" width="100" height="30" rx="8" fill="#4f46e5" />
-          <text x="50" y="50" fill="white" fontSize="12" fontFamily="sans-serif" fontWeight="bold">MAY 2026</text>
+          {/* Notes Platform UI Mockup */}
+          <rect x="30" y="30" width="340" height="160" rx="8" fill="#111827" stroke="rgba(255,255,255,0.1)" />
           
-          {/* Grid lines on Calendar */}
-          <rect x="42" y="75" width="16" height="16" rx="3" fill="#10b981" />
-          <rect x="72" y="75" width="16" height="16" rx="3" fill="#10b981" />
-          <rect x="102" y="75" width="16" height="16" rx="3" fill="#ef4444" />
-          <rect x="42" y="105" width="16" height="16" rx="3" fill="#10b981" />
-          <rect x="72" y="105" width="16" height="16" rx="3" fill="#10b981" />
-          <rect x="102" y="105" width="16" height="16" rx="3" fill="#10b981" />
+          {/* Header Bar */}
+          <rect x="30" y="30" width="340" height="30" rx="8" fill="rgba(255, 255, 255, 0.03)" />
+          <circle cx="45" cy="45" r="4" fill="#ef4444" />
+          <circle cx="57" cy="45" r="4" fill="#f59e0b" />
+          <circle cx="69" cy="45" r="4" fill="#10b981" />
+          <rect x="90" y="40" width="100" height="10" rx="5" fill="#f59e0b" opacity="0.8" />
           
-          {/* Charts/Logs */}
-          <rect x="160" y="30" width="210" height="70" rx="8" fill="#111827" stroke="rgba(255,255,255,0.1)" />
-          <text x="175" y="55" fill="white" fontSize="11" fontFamily="sans-serif">Present Rate</text>
-          <text x="175" y="80" fill="#10b981" fontSize="18" fontFamily="sans-serif" fontWeight="bold">92.4%</text>
-          <circle cx="310" cy="65" r="22" fill="none" stroke="#374151" strokeWidth="6" />
-          <circle cx="310" cy="65" r="22" fill="none" stroke="#10b981" strokeWidth="6" strokeDasharray="100" strokeDashoffset="15" />
-
-          {/* Stats Bar */}
-          <rect x="160" y="115" width="210" height="65" rx="8" fill="#111827" stroke="rgba(255,255,255,0.1)" />
-          <rect x="175" y="130" width="180" height="8" rx="4" fill="#374151" />
-          <rect x="175" y="130" width="140" height="8" rx="4" fill="#06b6d4" />
-          <rect x="175" y="150" width="180" height="8" rx="4" fill="#374151" />
-          <rect x="175" y="150" width="90" height="8" rx="4" fill="#f59e0b" />
+          {/* Main Book/Notes rows */}
+          <rect x="50" y="75" width="300" height="30" rx="6" fill="#1f2937" stroke="rgba(255, 255, 255, 0.05)" />
+          <rect x="65" y="85" width="120" height="10" rx="5" fill="#e5e7eb" opacity="0.9" />
+          <rect x="310" y="82" width="25" height="16" rx="4" fill="#f59e0b" />
+          <path d="M318,90 L322,94 L326,90 M322,86 L322,94" stroke="white" strokeWidth="2" fill="none" />
+          
+          <rect x="50" y="115" width="300" height="30" rx="6" fill="#1f2937" stroke="rgba(255, 255, 255, 0.05)" />
+          <rect x="65" y="125" width="150" height="10" rx="5" fill="#e5e7eb" opacity="0.9" />
+          <rect x="310" y="122" width="25" height="16" rx="4" fill="#f59e0b" />
+          <path d="M318,130 L322,134 L326,130 M322,126 L322,134" stroke="white" strokeWidth="2" fill="none" />
+          
+          <rect x="50" y="155" width="300" height="30" rx="6" fill="#1f2937" stroke="rgba(255, 255, 255, 0.05)" />
+          <rect x="65" y="165" width="90" height="10" rx="5" fill="#e5e7eb" opacity="0.9" />
+          <rect x="310" y="162" width="25" height="16" rx="4" fill="#f59e0b" />
+          <path d="M318,170 L322,174 L326,170 M322,166 L322,174" stroke="white" strokeWidth="2" fill="none" />
         </svg>
       )
     },
-    {
-      title: 'College Event Board (in process)',
-      description: 'An interactive notice board enabling department admins to post, schedule, and categorize upcoming activities. Includes event filters and bookmark functionality.',
-      tech: ['React.js', 'CSS Modules', 'Framer Motion', 'Local Storage'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
-      visual: (
-        <svg viewBox="0 0 400 220" className="project-svg">
-          <defs>
-            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#ec4899" />
-              <stop offset="100%" stopColor="#8b5cf6" />
-            </linearGradient>
-          </defs>
-          <rect width="400" height="220" rx="12" fill="url(#grad2)" opacity="0.15" />
-          <rect x="1" y="1" width="398" height="218" rx="11" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="2" />
-          
-          {/* Post-it Notes Mockup */}
-          <rect x="30" y="30" width="105" height="100" rx="8" fill="#a855f7" opacity="0.8" />
-          <rect x="42" y="45" width="80" height="6" rx="3" fill="white" opacity="0.8" />
-          <rect x="42" y="60" width="60" height="6" rx="3" fill="white" opacity="0.5" />
-          <circle cx="110" cy="110" r="10" fill="white" opacity="0.3" />
-          
-          <rect x="150" y="30" width="105" height="100" rx="8" fill="#06b6d4" opacity="0.8" />
-          <rect x="162" y="45" width="80" height="6" rx="3" fill="white" opacity="0.8" />
-          <rect x="162" y="60" width="40" height="6" rx="3" fill="white" opacity="0.5" />
-          <circle cx="230" cy="110" r="10" fill="white" opacity="0.3" />
 
-          <rect x="270" y="30" width="100" height="100" rx="8" fill="#f43f5e" opacity="0.8" />
-          <rect x="282" y="45" width="76" height="6" rx="3" fill="white" opacity="0.8" />
-          <rect x="282" y="60" width="50" height="6" rx="3" fill="white" opacity="0.5" />
-          
-          {/* Main Action Bar */}
-          <rect x="30" y="148" width="340" height="40" rx="8" fill="#111827" stroke="rgba(255,255,255,0.1)" />
-          <circle cx="55" cy="168" r="10" fill="#8b5cf6" />
-          <rect x="80" y="164" width="100" height="8" rx="4" fill="#9ca3af" />
-          <rect x="270" y="158" width="80" height="20" rx="10" fill="#ec4899" />
-          <text x="288" y="172" fill="white" fontSize="9" fontFamily="sans-serif" fontWeight="bold">Create +</text>
-        </svg>
-      )
-    },
     {
       title: 'Personal Portfolio Website',
       description: 'A fully responsive showcase built with React functional hooks. Styles are managed dynamically using CSS custom variables to achieve premium dark/light toggles.',

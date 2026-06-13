@@ -69,7 +69,7 @@ const Footer = () => {
               <GithubIcon size={20} />
             </a>
             <a 
-              href="https://instagram.com" 
+              href="https://www.instagram.com/abhi_officialx_/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-btn" 
@@ -78,7 +78,7 @@ const Footer = () => {
               <InstagramIcon size={20} />
             </a>
             <a 
-              href="mailto:mkmannu0102@gmail.com.com" 
+              href="mailto:mkmannu0102@gmail.com" 
               className="social-btn" 
               aria-label="Email"
             >
