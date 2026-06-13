@@ -70,7 +70,7 @@ const Projects = () => {
       )
     },
     {
-      title: 'College Event Board',
+      title: 'College Event Board (in process)',
       description: 'An interactive notice board enabling department admins to post, schedule, and categorize upcoming activities. Includes event filters and bookmark functionality.',
       tech: ['React.js', 'CSS Modules', 'Framer Motion', 'Local Storage'],
       github: 'https://github.com',
