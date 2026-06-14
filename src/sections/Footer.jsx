@@ -60,7 +60,7 @@ const Footer = () => {
           </p>
           <div className="footer-socials">
             <a 
-              href="https://github.com" 
+              href="https://wa.me/qr/SIZKLVUA2UVGM1" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-btn" 
