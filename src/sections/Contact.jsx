@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertTriangle } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -51,48 +52,55 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if (validateForm()) {
-      setIsSubmitting(true);
-      
-      // Simulate API submission delay
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setFormData({ name: '', email: '', message: '' });
-        
-        // Trigger Toast Success
-        setToast({
-          show: true,
-          message: 'Thank you! Your message has been sent successfully.',
-          type: 'success'
-        });
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-        // Trigger Confetti Explosion
-        confetti({
-          particleCount: 100,
-          spread: 70,
-          origin: { y: 0.6 }
-        });
+  if (!validateForm()) return;
 
-        // Auto hide toast after 4 seconds
-        setTimeout(() => {
-          setToast((prev) => ({ ...prev, show: false }));
-        }, 4000);
-      }, 1200);
-    } else {
-      // Trigger Toast Error
-      setToast({
-        show: true,
-        message: 'Please resolve the errors in the form before submitting.',
-        type: 'error'
-      });
-      setTimeout(() => {
-        setToast((prev) => ({ ...prev, show: false }));
-      }, 4000);
-    }
-  };
+  setIsSubmitting(true);
+
+  try {
+    await emailjs.send(
+      "service_btaabt3",
+      "template_96d7co9",
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      "BlWBE5qQ6hRtlesMr"
+    );
+
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+
+    setToast({
+      show: true,
+      message: 'Thank you! Your message has been sent successfully.',
+      type: 'success'
+    });
+
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+
+  } catch (error) {
+    console.error(error);
+
+    setToast({
+      show: true,
+      message: 'Failed to send message.',
+      type: 'error'
+    });
+  }
+
+  setIsSubmitting(false);
+};
 
   return (
     <section id="contact" className="section-container">
