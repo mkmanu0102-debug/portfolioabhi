@@ -23,7 +23,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          My background, objectives, and academic journey.
+         My background, career aspirations, and academic journey.
         </motion.p>
       </div>
 
@@ -89,7 +89,7 @@ const About = () => {
           >
             <h3>Career Objective</h3>
             <p>
-              To leverage my technical capabilities in frontend frameworks like React.js and backend programming languages like Java (Spring Boot) in an innovative environment. I aim to create interactive user interfaces and robust web APIs while collaborating with cross-functional development teams.
+               To build a successful career in software development by contributing to meaningful projects, solving real-world problems, and continuously enhancing my knowledge and skills. I aim to work in a collaborative environment where I can learn, grow, and create impactful digital solutions.
             </p>
           </motion.div>
 
@@ -106,8 +106,8 @@ const About = () => {
               <div className="stat-icon-wrapper">
                 <GraduationCap size={24} className="stat-icon" />
               </div>
-              <div className="stat-number">Diploma</div>
-              <div className="stat-label"> Education</div>
+              <div className="stat-number">Computer Science</div>
+              <div className="stat-label">Field of Study</div>
             </motion.div>
 
             <motion.div 
@@ -121,8 +121,8 @@ const About = () => {
               <div className="stat-icon-wrapper">
                 <Briefcase size={24} className="stat-icon" />
               </div>
-              <div className="stat-number">Entry Level</div>
-              <div className="stat-label">Experience Bracket</div>
+              <div className="stat-number">Student</div>
+              <div className="stat-label">Career Focus</div>
             </motion.div>
           </div>
         </div>
@@ -142,7 +142,8 @@ const About = () => {
         <div className="exp-details">
           <h3>Professional Experience</h3>
           <p className="exp-placeholder-text">
-            I am currently seeking opportunities for internships, entry-level developer roles, and open-source collaborations. My primary stack features React.js, Java, Spring Boot, and database management using MySQL.
+          I am currently seeking internships, entry-level positions, 
+          and collaborative projects where I can apply my skills, contribute to meaningful solutions, and grow as a software developer while gaining valuable industry experience.
           </p>
         </div>
       </motion.div>

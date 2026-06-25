@@ -20,7 +20,7 @@ const Skills = () => {
       icon: <Database size={24} />,
       skills: [
         { name: 'Java', level: 85 },
-        { name: 'Spring Boot', level: 75 },
+        { name: 'Node.js', level: 60 },
         { name: 'MySQL', level: 60 },
       ]
     },

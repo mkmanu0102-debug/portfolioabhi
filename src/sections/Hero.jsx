@@ -47,7 +47,7 @@ const Hero = () => {
   const [text, setText] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const words = ['Frontend Developer', 'Java Developer', 'React Enthusiast', 'Spring Boot Developer'];
+  const words = ['Full Stack Developer', 'Web Application Developer', 'Tech Enthusiast', 'Continuous Learner'];
   const typingSpeed = 100;
   const deletingSpeed = 50;
   const delayBetweenWords = 1500;
@@ -121,7 +121,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="hero-description"
           >
-            I specialize in crafting high-performance user interfaces in React.js and building robust, scalable backend architectures with Java and Spring Boot.
+            Full Stack Developer passionate about building modern web applications and continuously learning new technologies.
           </motion.p>
 
           <motion.div
@@ -143,7 +143,7 @@ const Hero = () => {
                 alert("Resume download trigger! (Replace path in production)");
               }}
             >
-              Resume <FileText size={18} />
+              Resume Under Preparation <FileText size={18} />
             </a>
           </motion.div>
 
@@ -200,7 +200,7 @@ const Hero = () => {
               <span className="tech-badge">Java</span>
             </div>
             <div className="orbit-item item-spring">
-              <span className="tech-badge">Spring</span>
+              <span className="tech-badge">Node.js</span>
             </div>
             <div className="orbit-item item-mysql">
               <span className="tech-badge">MySQL</span>

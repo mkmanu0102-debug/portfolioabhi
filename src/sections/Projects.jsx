@@ -26,7 +26,7 @@ const Projects = () => {
       title: 'Free Notes Website',
       description: 'A clean, responsive platform built using HTML, CSS, and JavaScript. It helps college students find, view, and download semester notes, lecture guides, and study materials easily.',
       tech: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com',
+      github: 'https://github.com/dashboard',
       demo: 'https://example.com',
       visual: (
         <svg viewBox="0 0 400 220" className="project-svg">
@@ -68,12 +68,87 @@ const Projects = () => {
         </svg>
       )
     },
-
+    {
+      title: 'Quiz App',
+      description: 'Full-featured mobile quiz app with OTP-based registration & secure login. Users attempt timed quizzes, view detailed results, and compete on a real-time leaderboard. Built with React Native frontend and Node.js + MySQL backend.',
+      tech: ['React Native', 'Node.js', 'MySQL', ],
+      github: 'https://github.com/dashboard',
+      demo: null,
+      visual: (
+        <svg viewBox="0 0 400 220" className="project-svg">
+          <defs>
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#8b5cf6" />
+              <stop offset="100%" stopColor="#ec4899" />
+            </linearGradient>
+            <linearGradient id="grad2b" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#8b5cf6" />
+              <stop offset="100%" stopColor="#ec4899" />
+            </linearGradient>
+          </defs>
+          <rect width="400" height="220" rx="12" fill="url(#grad2)" opacity="0.15" />
+          <rect x="1" y="1" width="398" height="218" rx="11" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="2" />
+          {/* Phone mockup */}
+          <rect x="140" y="15" width="120" height="195" rx="14" fill="#0f172a" stroke="rgba(139,92,246,0.5)" strokeWidth="2" />
+          <rect x="170" y="20" width="60" height="8" rx="4" fill="#1e293b" />
+          {/* Quiz question card */}
+          <rect x="150" y="40" width="100" height="50" rx="6" fill="#1e293b" stroke="rgba(139,92,246,0.3)" strokeWidth="1" />
+          <rect x="158" y="48" width="70" height="6" rx="3" fill="#8b5cf6" opacity="0.8" />
+          <rect x="158" y="58" width="84" height="5" rx="2.5" fill="#e2e8f0" opacity="0.5" />
+          <rect x="158" y="67" width="60" height="5" rx="2.5" fill="#e2e8f0" opacity="0.5" />
+          <rect x="158" y="76" width="74" height="5" rx="2.5" fill="#e2e8f0" opacity="0.5" />
+          {/* Options */}
+          <rect x="150" y="98" width="100" height="16" rx="5" fill="#1e293b" stroke="rgba(139,92,246,0.3)" strokeWidth="1" />
+          <circle cx="158" cy="106" r="4" fill="#8b5cf6" opacity="0.5" />
+          <rect x="166" y="104" width="50" height="4" rx="2" fill="#e2e8f0" opacity="0.6" />
+          <rect x="150" y="118" width="100" height="16" rx="5" fill="#10b981" opacity="0.2" stroke="#10b981" strokeWidth="1" />
+          <circle cx="158" cy="126" r="4" fill="#10b981" />
+          <rect x="166" y="124" width="60" height="4" rx="2" fill="#10b981" opacity="0.8" />
+          <rect x="150" y="138" width="100" height="16" rx="5" fill="#1e293b" stroke="rgba(139,92,246,0.3)" strokeWidth="1" />
+          <circle cx="158" cy="146" r="4" fill="#8b5cf6" opacity="0.3" />
+          <rect x="166" y="144" width="44" height="4" rx="2" fill="#e2e8f0" opacity="0.5" />
+          {/* Submit button */}
+          <rect x="155" y="160" width="90" height="18" rx="9" fill="url(#grad2b)" />
+          <rect x="177" y="166" width="46" height="6" rx="3" fill="white" opacity="0.9" />
+          {/* Score card left */}
+          <rect x="22" y="45" width="100" height="60" rx="8" fill="#1e293b" stroke="rgba(139,92,246,0.35)" strokeWidth="1" />
+          <rect x="30" y="53" width="50" height="6" rx="3" fill="#ec4899" opacity="0.7" />
+          <rect x="30" y="64" width="84" height="22" rx="4" fill="rgba(139,92,246,0.1)" />
+          <rect x="36" y="69" width="22" height="10" rx="5" fill="#8b5cf6" opacity="0.8" />
+          <rect x="62" y="71" width="40" height="6" rx="3" fill="#e2e8f0" opacity="0.4" />
+          <rect x="30" y="92" width="70" height="5" rx="2.5" fill="#e2e8f0" opacity="0.3" />
+          {/* Leaderboard right */}
+          <rect x="278" y="45" width="100" height="85" rx="8" fill="#1e293b" stroke="rgba(236,72,153,0.35)" strokeWidth="1" />
+          <rect x="286" y="53" width="55" height="6" rx="3" fill="#ec4899" opacity="0.7" />
+          <rect x="286" y="67" width="84" height="14" rx="4" fill="#fbbf24" opacity="0.15" />
+          <circle cx="295" cy="74" r="4" fill="#fbbf24" />
+          <rect x="303" y="72" width="38" height="4" rx="2" fill="#e2e8f0" opacity="0.6" />
+          <rect x="348" y="72" width="16" height="4" rx="2" fill="#fbbf24" opacity="0.9" />
+          <rect x="286" y="85" width="84" height="14" rx="4" fill="#94a3b8" opacity="0.1" />
+          <circle cx="295" cy="92" r="4" fill="#94a3b8" />
+          <rect x="303" y="90" width="32" height="4" rx="2" fill="#e2e8f0" opacity="0.5" />
+          <rect x="348" y="90" width="16" height="4" rx="2" fill="#94a3b8" opacity="0.7" />
+          <rect x="286" y="103" width="84" height="14" rx="4" fill="#b45309" opacity="0.1" />
+          <circle cx="295" cy="110" r="4" fill="#b45309" opacity="0.9" />
+          <rect x="303" y="108" width="42" height="4" rx="2" fill="#e2e8f0" opacity="0.4" />
+          <rect x="348" y="108" width="16" height="4" rx="2" fill="#b45309" opacity="0.7" />
+          {/* OTP box bottom-left */}
+          <rect x="22" y="130" width="100" height="50" rx="8" fill="#1e293b" stroke="rgba(16,185,129,0.4)" strokeWidth="1" />
+          <rect x="30" y="138" width="35" height="5" rx="2.5" fill="#10b981" opacity="0.8" />
+          <rect x="30" y="150" width="20" height="14" rx="3" fill="rgba(16,185,129,0.15)" stroke="#10b981" strokeWidth="1" />
+          <rect x="54" y="150" width="20" height="14" rx="3" fill="rgba(16,185,129,0.15)" stroke="#10b981" strokeWidth="1" />
+          <rect x="78" y="150" width="20" height="14" rx="3" fill="rgba(16,185,129,0.15)" stroke="#10b981" strokeWidth="1" />
+          <rect x="36" y="154" width="8" height="6" rx="2" fill="#10b981" opacity="0.9" />
+          <rect x="60" y="154" width="8" height="6" rx="2" fill="#10b981" opacity="0.9" />
+          <rect x="84" y="154" width="8" height="6" rx="2" fill="#10b981" opacity="0.9" />
+        </svg>
+      )
+    },
     {
       title: 'Personal Portfolio Website',
       description: 'A fully responsive showcase built with React functional hooks. Styles are managed dynamically using CSS custom variables to achieve premium dark/light toggles.',
       tech: ['React.js', 'Framer Motion', 'Vanilla CSS', 'Lucide Icons'],
-      github: 'https://github.com',
+      github: 'https://github.com/dashboard',
       demo: 'https://example.com',
       visual: (
         <svg viewBox="0 0 400 220" className="project-svg">
@@ -127,7 +202,7 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          A selection of projects representing my skills in frontend systems and backend routing.
+          A collection of projects showcasing my creativity, technical skills, and problem-solving approach.
         </motion.p>
       </div>
 
@@ -174,7 +249,7 @@ const Projects = () => {
                   rel="noopener noreferrer" 
                   className="btn-primary project-btn"
                 >
-                  Demo <ExternalLink size={16} />
+                  Coming Soon <ExternalLink size={16} />
                 </a>
               </div>
             </div>
